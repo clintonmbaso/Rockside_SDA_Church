@@ -19,10 +19,7 @@
             cursor: pointer;
             margin-bottom: 1px;
             margin-top: 20px;
-            background: white;
             padding: 0;
-            border-radius: 50px;
-            border: -2px #002B5C solid;
         }
         .Two2 {
             max-width: 40px;
@@ -30,6 +27,29 @@
             cursor: pointer;
             padding: 0;
         }
+.department {
+    text-align: right;
+    margin-top: -23px;
+    font-size: 15px;
+}
+
+.titled{
+    color: black;
+    text-align: left;
+    border-left: solid 3px orange;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid orange;
+}
+
+.titledList {
+    
+}
+
+a {
+    text-decoration: none;
+}
 .main {
     text-align: justify;
 }
@@ -48,9 +68,11 @@
 }
 
         .sidebar p {
-          font-size: 9px;
-          margin: 1px -5px;
+            font-size: 8px;
+            margin: 1px -5px;
             color: white;
+            text-transform: uppercase;
+            font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
         }
 
         .content {
@@ -61,7 +83,7 @@
         header {
             text-align: right;
             margin-bottom: 10px;
-          margin: 2px auto;
+            margin: 2px auto;
         }
 
         header h1, header p, .date, .recipient, .subject, p, .signature, .footer {
@@ -70,36 +92,38 @@
         header h1 {
             font-size: 24px;
             margin-bottom: 5px;
-			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+            font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
         }
+
         header p {
             font-size: 14px;
             margin: 2px 0;
-			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
         }
+
         hr {
             border: 1px solid #000;
-          margin-bottom: 0;
+            margin-bottom: 0;
         }
 
         #date {
-          text-align: right;
-          margin-bottom: 20px;
-          background-color: rgba(0,0,0,0.2);
-          padding: 2px;
+            text-align: right;
+            margin-bottom: 20px;
+            background-color: rgba(0,0,0,0.2);
+            padding: 2px;
             margin-left: auto;
-          margin-top: 0;
+            margin-top: 0;
             width: auto;
-          border-radius: 0 0 0 10px;
+            border-radius: 0 0 0 10px;
+            font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
         }
 
         .recipient {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         
         .subject {
             margin-bottom: 20px;
-			text-align: justify;
+            text-align: justify;
         }
 
         .footer {
@@ -141,9 +165,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.signatures {
+.signatures, .adminSignatures, .clerk, .admins, .pm {
     display: none;
 }
+
+
 /* Save Button */
 .save-btn {
     background-color: #4caf50;
@@ -188,30 +214,63 @@
       .save-btn, .print-btn {
             display: none;
         }
-              .sidebar {
+        .sidebar {
             width: 10%;
-                  padding-top: 10px;
+            padding-top: 10px;
         }
         
         .sidebar p {
-          font-size: 12px;
+          font-size: 9px;
           margin: 1px -5px;
+        }
+        .adventist {
+            font-size: 13px;
         }
         
         .signature {
             bottom: 5px;
             position: relative;
-            display: flex; 
+            display: flex;
             justify-content: space-between;
-
         }
-        .signatures {
+        
+        .signatures, .adminSignatures {
             display: block;
             position: absolute;
             width: auto;
-            height: 60px;
-            left: -5px;
-            bottom: 8px;
+            height: 40px;
+        }
+        
+        .signatures {
+            left: 25px;
+            bottom: 4px;
+        }
+        
+        .adminSignatures {
+            right: 5px;
+            bottom: 10px;
+        }
+        
+        .clerk, .admins, .pm {
+            display: block;
+            position: absolute;
+            width: auto;
+            height: 40px;
+        }
+        
+        .clerk {
+            left: 10px;
+            bottom: 4px;
+        }
+        
+        .admins {
+            left: 287px;
+            bottom: 10px;
+        }
+        
+        .pm {
+            right: 20px;
+            bottom: 19px;
         }
         
         .sidebar img {
